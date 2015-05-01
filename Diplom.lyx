@@ -1,0 +1,895 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass eskdtext
+\begin_preamble
+\usepackage{indentfirst}
+\sloppy
+\newcommand{\No}{\textnumero}
+
+%\renewcommand{\rmdefault}{ftm} % Times New Roman
+
+\ESKDdepartment{Министерство образования и науки республики Казахстан}
+\ESKDcompany{Петропавловский колледж железнодорожного транспорта}
+\ESKDclassCode{}
+\ESKDunitName{ESKDunitName}
+\ESKDtitleDesignedBy{Выполнил: \newline Снежко Д.В.}{ПО-41}
+\ESKDtitle{Разработка системы катологизации аниме контента}
+%\title{title}
+%\ESKDdocName{ESKDdocName}
+\ESKDsignature{ПКЖТ.1304.002.ДП.ПЗ.008.15}
+\ESKDletter{Д}{П}{}
+\ESKDmaterial{ESKDmaterial}
+\ESKDmass{ESKDmass}
+\ESKDscale{ESKDscale}
+\ESKDgroup{ПО-41}
+\ESKDauthor{ESKDauthor}
+\author{Снежко Д.В.}
+\ESKDchecker{Черников П.П.}
+%\ESKDnormContr{DnormContr}
+%\ESKDapprovedBy{DapprovedBy}
+%\ESKDdate{2000/02/02}
+\date{2015/04/07}
+
+
+%\ESKDtitle{Отчет к выполненной лабораторной работе} 
+%\ESKDdocName{по дисциплине "Теоритическая информатика"}
+%\ESKDsignature{Исследование метода когерентного накопления сигнала} 
+%\ESKDtitleApprovedBy{профессор, д.т.н.}{фыва А.Ю.}
+%\ESKDtitleDesignedBy{Выполнил: \newline студент гр. 5113}{яывпа Р.Р.}
+%\ESKDdate{2011/09/25}
+\end_preamble
+\options floatsection, pointsection, simple, 14pt
+\use_default_options true
+\maintain_unincluded_children false
+\language russian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman Cantarell
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0cm
+\topmargin 10mm
+\rightmargin 0cm
+\bottommargin 0cm
+\headheight 0cm
+\headsep 0cm
+\footskip 0cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 0 -1
+\bullet 2 0 0 -1
+\bullet 3 0 0 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Введение
+\end_layout
+
+\begin_layout Enumerate
+Актуальность +
+\end_layout
+
+\begin_layout Enumerate
+Цель дипломного проекта +/-
+\end_layout
+
+\begin_layout Enumerate
+Задачи дипломного проекта
+\end_layout
+
+\begin_layout Enumerate
+Практическая значимость
+\end_layout
+
+\begin_layout Enumerate
+Объект исследования 
+\end_layout
+
+\begin_layout Enumerate
+Характеристика вычислительной техники
+\end_layout
+
+\begin_layout Standard
+Задачи каталогизации различного контента возникают повсеместно, от школьных
+ библиотек до государственных документов, однако в таких программах заинтересова
+ны не только крупные учреждения, но и рядовые пользователи персональных
+ компьютеров, одна из таких аудиторий - фанаты аниме - жанра японской мультиплек
+ации, имеющей очень большую популярность не только в Японии, откуда они
+ родом, но и во всём мире, причём возростной порог уадитории колеблется
+ от дошкольного до, вполне, зрелого 35-40 лет.
+\end_layout
+
+\begin_layout Standard
+Как правило на счету зрителей аниме, не один десяток просмотреных мультфильмов,
+ в связи с чем - возникают определённые потребности, такие как: ведение
+ списка, которым можно поделиться с друзьями, или записать в него те аниме
+ которые хочешь посмотреть, отмечать на какой серии остановился, а так же
+ некоторые другие и разумеется когда речь идёт не об одном десятке таких
+ записей, возникает потребность иметь навигацию по этому списку, такие базовые
+ вещи, как, поиск, фильтрация, добавление описания и картинки для большего
+ удобства поиска и освежения воспоминаний при поиске, т.к.
+ человеческий мозг наиболее эффективно работает с графической информацией,
+ одного взгляда на картинку может хватить чтобы вспомнить аниме нежели просто
+ прочитав название или вчитываясь в длинное описание.
+\end_layout
+
+\begin_layout Standard
+Целью дипломного проекта является разработка программного продукта позволяющего
+ каталогизировать аниме-контент, а так же связанные с ним, близкие по смыслу,
+ мангу, AMV и Дорамы.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Раздел
+Аналитическая часть
+\end_layout
+
+\begin_layout Подраздел
+Анализ предметной области
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Общая характеристика объекта исследования}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Каталогизация — это совокупность методов и процессов направленных на хранение,
+ упорядочевание и классификацию какой-либо информации.
+ Термин «каталогизация» употреблялся уже XVI веке.
+ В XIX веке каталогизация становится научной дисциплиной, имеющей несколько
+ самостоятельных направлений.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Организация предметной области}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Аниме — японская анимация.
+ В отличие от мультфильмов других стран, предназначенных в основном для
+ просмотра детьми, бо́льшая часть выпускаемого аниме рассчитана на подростковую
+ и взрослую аудитории, и во многом за счёт этого имеет высокую популярность
+ в мире.
+\end_layout
+
+\begin_layout Standard
+Аниме отличается характерной манерой отрисовки персонажей и фонов.
+ Издаётся в форме телевизионных сериалов, а также фильмов, распространяемых
+ на видеоносителях или предназначенных для кинопоказа.
+ Сюжеты могут описывать множество персонажей, отличаться разнообразием мест
+ и эпох, жанров и стилей.
+ Источниками для сюжета аниме-сериалов чаще всего являются: манга (японские
+ комиксы), ранобэ (лайт-новел), или компьютерные игры (как правило, в жанре
+ «визуальный роман»).
+ 
+\end_layout
+
+\begin_layout Standard
+При экранизации обычно сохраняется графический стиль и другие особенности
+ оригинала.
+ Реже используются другие источники, например, произведения классической
+ литературы.
+ Есть также аниме, имеющие полностью оригинальный сюжет (в этом случае уже
+ само аниме может послужить источником для создания по нему книжных и манга-верс
+ий).
+ Значение термина «аниме» может варьироваться в зависимости от контекста.
+ В западных странах аниме является объектом исследования учёных-культурологов,
+ социологов и антропологов — Эри Идзавы, Скотта Маклауда, Сьюзан Напьер,
+ Шерон Кинселлы и других.
+\end_layout
+
+\begin_layout Подраздел
+Информационная сущность задач проектного решения WTFS?!!!
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Назначение и цели создания информационно-моделирующей системы}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Характеристика информационно-моделирующей системы }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Подраздел
+Структура и функционирование системы (как должно было бы быть) 
+\end_layout
+
+\begin_layout Подраздел
+Функции разрабатываемой системы 
+\end_layout
+
+\begin_layout Подраздел
+Математическое обоснование проекта 
+\end_layout
+
+\begin_layout Подраздел
+Информационное и технологическое обоснование проекта 
+\end_layout
+
+\begin_layout Подраздел
+Инструментальное обоснование проекта 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Эргономика программного обеспечения}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Эргономика - Научная дисциплина, изучающая взаимодействие человека и других
+ элементов системы, а также сфера деятельности по применению теории, принципов,
+ данных и методов этой науки для обеспечения благополучия человека и оптимизации
+ общей производительности системы.)
+\end_layout
+
+\begin_layout Standard
+Программный продукт должен быть разработан с учётом привычек пользователей
+ и накопленного ими опыта, интерфейс программы не должен выбиваться из общего
+ вида системных приложений но в то же время должен быть инновационным и
+ лаконичным.
+\end_layout
+
+\begin_layout Standard
+Пользователи должны иметь возможность настраивать отображение элементов
+ управления программы и их размеры в соответствии с их нуждами предпочтениями,
+ помимо этого пользователи должны иметь возможность смены стиля интерфейса.
+\end_layout
+
+\begin_layout Standard
+(В связи с тем что аниме-культура имеет широкое распространение по всему
+ миру)Интерфейс программы должен быть локализуемым на другие языки мира
+ для охвата большей аудитории.
+\end_layout
+
+\begin_layout Standard
+Помимо прочего в различных операционных системах, приссутствуют свои устоявшиеся
+ нормы, такие как место на файловой сестеме, где программы хранят свои данные,
+ например, для операционной системы семейства Microsoft Windows таким местом
+ является 
+\begin_inset Quotes fld
+\end_inset
+
+C:
+\backslash
+Users
+\backslash
+<Имя_Пользователя>
+\backslash
+AppData
+\backslash
+
+\begin_inset Quotes frd
+\end_inset
+
+, в то время как для дистрибутивов UNIX-подобных систем, такием местом является
+ 
+\begin_inset Quotes fld
+\end_inset
+
+/home/<Имя_Пользователя>/.local/share/
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Данное обстоятельство, несомненно, так же относится к эргономичности развёртыва
+ния программ под различными операционными системами.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Раздел
+Проектная часть
+\end_layout
+
+\begin_layout Подраздел
+Принципы проектирования информационно-моделирующей системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Система контроля версий}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Любая информациооная система процесс разработки которой не заканчивается
+ на достижении кокого-либо конкретного результата, предполагает постоянную
+ доработку и внесение изменений иногда такие изменения могут повлечь серьёзные
+ изменения в кодовой базе проекта, выводящие продукт из функционального
+ состояная на время разработки новых функциональных возможностей.
+\end_layout
+
+\begin_layout Standard
+В связи с тем что, разработка новых функциональных возможностей программного
+ продукта может продолжаться весьма продолжительное время, теряется возможность
+ внесения критически важных обновлений в текущую версию продукта, исходя
+ из этого становится очевидным необходимость каким-либо образом контролировать
+ процесс разработки таким образом чтобы разработка новой версии продукта
+ не вносила осложнений в процесс доработки критически важных обновлений
+ текущей версии продукта.
+\end_layout
+
+\begin_layout Standard
+Системы контроля версий предназначены, помимо всего прочего и для решения
+ таких задач, они позволяют контроллировать процесс разработки программного
+ продукта, имея возможность создавать контрольные точки, такие как выход
+ новой версии и в последствии возможность возврата к любой из контрольных
+ точек, помимо этого системы контроля версий позволяют созавать различные
+ ветви разработки программы, например, основная ветвь может постоянно отражать
+ рабочее состояние продукта, а отдельная ветвь для критически важных обновлений
+ позволит разрабатывать их не выводя из строя основную версию продукта,
+ а в последствии эти ветви могут синхронизироваться друг с другом таким
+ образом объеденяя изменения с различных ветвей.
+\end_layout
+
+\begin_layout Standard
+Помими всего упомянутого, системы контроля версий так же позволяют вести
+ разработку программного продукта нескольким разработчикам, значительно
+ упрощая процесс разработки благодаря возможности синхронизации(слияния)
+ ветвей.
+ Таким образом 2 разработчика могут работать над различными частями программного
+ продукта, а по завершении (объеденить/синхронизировать/слить) изменения
+ из своих ветвей в главную ветвь получая новую работоспособную версию продукта.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename git-branches.png
+	scale 35
+	rotateOrigin rightBaseline
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Модель ветвления в Git
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Существуют централизованные и децентрализованные системы контроля версий,
+ различающиеся ...
+ бла-бла-бла
+\end_layout
+
+\begin_layout Standard
+Система контроля версий Git является децентрализованной...
+ бла-бла-бла
+\end_layout
+
+\begin_layout Standard
+Таким образом используя в своей работе систему контроля версий я имею возможност
+ь...
+ бла-бла-бла
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Концептуальная модель информационно-моделирующей системы}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Структура информационной системы (диаграмма экранных форм
+ разработанного программного продукта)}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Подраздел
+Основные алгоритмы расчета приложения 
+\end_layout
+
+\begin_layout Подраздел
+Программная концепция информационно-моделирующей системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Характеристика входной и выходной информации}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subsubsection{Описание программных компонентов систем}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Подраздел
+Документальное описание информационной системы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Knut"
+
+\end_inset
+
+Кнут Д.Э.
+ Искусство программирования / перевод с англ.
+ Козаченко Ю.В.
+ в 3-х т.
+ М.: Просвещение 1997.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Database"
+
+\end_inset
+
+Ульман Дж.
+ Основы систем баз данных / Дж.Ульман, Д.Уидом.
+ М.: Лори, 2000;
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Qt_Shlee"
+
+\end_inset
+
+Шлее М.
+ Qt 4.8 - Профессиональное программирование на C++, «БХВ-Петербург», 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Qt_Sammerfild"
+
+\end_inset
+
+Саммерфилд М.
+ Qt Профессиональное программирование, разработка кросплатформенных приложений
+ на C++, «Символ-Плюс», 2011
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Ref_Fauler"
+
+\end_inset
+
+Фаулер М.
+ Рефакторинг - Улучшение существующего кода, «Символ-Плюс», 2003
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-Pat_GoF"
+
+\end_inset
+
+Банда Четырёх Приёмы объектно-ориентированного проектирования, «Питер»,
+ 2001
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-ProGit"
+
+\end_inset
+
+Скотт Чакон и Бен Страуб, Pro-Git, «Apress», 2009
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Используемые технологии
+\end_layout
+
+\begin_layout Itemize
+Базы данных
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SQLite
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Язык программирования
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+C++
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Qt
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Кросплатформенность
+\end_layout
+
+\begin_layout Itemize
+Интернационализация
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Документация
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Doxygen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Юнит тестирование
+\end_layout
+
+\begin_layout Itemize
+Системы контроля версий
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Git
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Качество кода
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Паттёрны проектирования
+\end_layout
+
+\begin_layout Itemize
+UML
+\end_layout
+
+\begin_layout Itemize
+Рефакторинг
+\end_layout
+
+\begin_layout Itemize
+Статический анализатор кода
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CppCheck
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Part
+Отличия программы от аналогов (
+\begin_inset CommandInset href
+LatexCommand href
+name "Anime List"
+target "https://vk.com/anime.list"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+Стабильность, программа тщательно тестируется перед выпуском версий.
+ 
+\end_layout
+
+\begin_layout Itemize
+Open Source и свободная лицензия, вы можете свободно делиться программой
+ с друзьями, принять участие в разработке программы и даже написать собственную
+ программу основываясь на нашей, с одним лишь обязательством - она должна
+ быть опубликована под той же лицензией.
+ 
+\end_layout
+
+\begin_layout Itemize
+Кроссплатформенность, программа работает на 3х основных платформах - Windows,
+ Linux, MacOS.
+ Хотя для последнего пока ещё нет официальной сборки.
+ 
+\end_layout
+
+\begin_layout Itemize
+Эргономичный дизайн и возможность его мргльмодификации при помощи QSS(почти
+ тот же CSS) 
+\end_layout
+
+\begin_layout Itemize
+Не требует нарушения политики безопасности (Запуск от имени администратора)
+ 
+\end_layout
+
+\begin_layout Itemize
+Интернационализация.
+ Официально мы предоставляем Русскую и английскую локализации, но ничто
+ не мешает вам сделать свою.
+ 
+\end_layout
+
+\begin_layout Itemize
+Тех поддержка, мы ответим на все ваши вопросы и постараемся решить любые
+ проблемы в нашей группе.
+ 
+\end_layout
+
+\begin_layout Itemize
+Имеется конвертер из экспортного формата программы AnimeList 
+\end_layout
+
+\begin_layout Itemize
+Автономность.
+ Для работы программы не требуется постоянное соединение с интернетом, все
+ данные хранятся на вашем локальном компьютере, что так же означает что
+ вы можете легко перенести свою БД на любой другой компьютер.
+\end_layout
+
+\end_body
+\end_document
