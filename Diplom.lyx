@@ -18,7 +18,7 @@
 \ESKDtitle{Разработка системы катологизации аниме контента}
 %\title{title}
 %\ESKDdocName{ESKDdocName}
-\ESKDsignature{ПКЖТ.1304.002.ДП.ПЗ.008.15}
+\ESKDsignature{   ПКЖТ.1304.002.ДП.ПЗ.008.15}
 \ESKDletter{Д}{П}{}
 \ESKDmaterial{ESKDmaterial}
 \ESKDmass{ESKDmass}
@@ -47,12 +47,12 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman Cantarell
+\font_roman default
 \font_sans default
 \font_typewriter default
 \font_math auto
 \font_default_family default
-\use_non_tex_fonts true
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
@@ -141,23 +141,23 @@ maketitle
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ESKDthisStyle{title}
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Введение
+\begin_layout Part
+TO DO LIST
 \end_layout
 
 \begin_layout Enumerate
@@ -182,6 +182,65 @@ LatexCommand tableofcontents
 
 \begin_layout Enumerate
 Характеристика вычислительной техники
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ESKDthisStyle{title}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ESKDthisStyle{formII}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Введение
 \end_layout
 
 \begin_layout Standard
@@ -229,20 +288,8 @@ LatexCommand tableofcontents
 Анализ предметной области
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Общая характеристика объекта исследования}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Общая характеристика объекта исследования
 \end_layout
 
 \begin_layout Standard
@@ -253,20 +300,8 @@ subsubsection{Общая характеристика объекта иссле�
  самостоятельных направлений.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Организация предметной области}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Организация предметной области
 \end_layout
 
 \begin_layout Standard
@@ -307,20 +342,8 @@ subsubsection{Организация предметной области}
 Мессия
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Непроглядная тьма}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Непроглядная тьма
 \end_layout
 
 \begin_layout Standard
@@ -356,27 +379,15 @@ N\end{array}>\begin{array}{c}
  удобней чем блокнот, он споминает про табличные процессоры, такие как M$
  Excel, LO Calc и другие, конечно он начинает переписывать свои записи из
  блокнота в выбранную им программу.
- Спустя какое-то время, год-да, он начинает понимать, что искать по таблице
+ Спустя какое-то время, год-два, он начинает понимать, что искать по таблице
  которая уже составляет более сотни аниме не самая простая затея, мало того
  что данные сильно разбросаны, не все помещаются в одну строчку, некоторые
  названия просто обрезаются, и в конце концов уже становится сложно что-то
  найти.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Луч надежды}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Луч надежды
 \end_layout
 
 \begin_layout Standard
@@ -420,20 +431,8 @@ subsubsection{Луч надежды}
 Инструментальное обоснование проекта 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Эргономика программного обеспечения}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Эргономика программного обеспечения
 \end_layout
 
 \begin_layout Standard
@@ -511,20 +510,8 @@ AppData
 Принципы проектирования информационно-моделирующей системы
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Система контроля версий}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Под-подраздел
+Система контроля версий
 \end_layout
 
 \begin_layout Standard
@@ -574,12 +561,6 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename git-branches.png
-	scale 35
-
-\end_inset
-
 
 \end_layout
 
@@ -587,7 +568,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Модель ветвления в Git
+Модель ветвления в Git (
+\begin_inset CommandInset href
+LatexCommand href
+name "Оригинальная идея"
+target "http://habrahabr.ru/post/106912/"
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -630,77 +619,12 @@ status open
  бла-бла-бла
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Концептуальная модель информационно-моделирующей системы}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Структура информационной системы (диаграмма экранных форм
- разработанного программного продукта)}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Подраздел
 Основные алгоритмы расчета приложения 
 \end_layout
 
 \begin_layout Подраздел
 Программная концепция информационно-моделирующей системы
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Характеристика входной и выходной информации}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-subsubsection{Описание программных компонентов систем}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Подраздел
